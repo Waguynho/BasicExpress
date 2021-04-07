@@ -14,5 +14,5 @@ app.use(postsRoute);
 app.use(filesRoute);
 
 app.listen(port, () => {
-  console.log('Example app listening at http://localhost:${port}');
+  console.log('Example app listening at http://localhost:'+port);
 });
