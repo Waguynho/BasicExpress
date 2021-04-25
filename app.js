@@ -1,9 +1,10 @@
 const express = require('express');
 const app = express();
 const port = 3000;
-var usersRoute = require('./routes/users.js');
-var postsRoute = require('./routes/posts.js');
-var filesRoute = require('./routes/files.js');
+let usersRoute = require('./routes/users.js');
+let postsRoute = require('./routes/posts.js');
+let filesRoute = require('./routes/files.js');
+let arduinosRoute = require('./routes/arduino.js');
 
 app.get('/', (req, res) => {
   res.redirect('/html/index.html');
@@ -12,6 +13,7 @@ app.get('/', (req, res) => {
 app.use(usersRoute);
 app.use(postsRoute);
 app.use(filesRoute);
+app.use(arduinosRoute);
 
 app.listen(port, () => {
   console.log('Example app listening at http://localhost:'+port);

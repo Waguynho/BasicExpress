@@ -1,7 +1,7 @@
 var baseRoute = require('./baseRoute.js');
 
 var postMiddleware = function (req, res, next) {
-    console.log('post LOGGED')
+    console.log('post MiddleWare')
     next()
 }
 

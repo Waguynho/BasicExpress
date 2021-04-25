@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">    
-    <link rel="stylesheet" href="../css/bootstrap-icons.css">
+    <link href="../css/bootstrap.css" rel="stylesheet">
+
 
     <title>Express Ws</title>
 </head>
@@ -17,9 +17,9 @@
     <nav class="navbar navbar-dark bg-primary mt-1">
         <div class="container-fluid">
             <a class="navbar-brand">Basic Express</a>
-            <form class="d-flex " >
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light" type="submit">Search</button>
+            <form class="d-flex ">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
         </div>
     </nav>
@@ -29,14 +29,23 @@
         <p class="text-end"><i class="bi bi-alarm"></i> My first paragraph.</p>
 
         <ul class="list-group ">
-            <li class="list-group-item list-group-item-dark link-info">  <a href="/files" target="_blank">OPEN LOCAL PDF</a> <i class="bi bi-folder2-open fs-4"></i><br> </li>
-            <li class="list-group-item list-group-item-warning"><a href="/files/download" target="_blank">DOWNLOAD PDF</a> <i class="bi bi-cloud-download-fill fs-4"></i><br></li>
-            <li class="list-group-item list-group-item-success"><a href="/users/55/posts/78"  target="_blank">GO TO USERS</a> <i class="bi bi-people-fill fs-4"></i><br></li>
-            <li class="list-group-item list-group-item-danger"><a href="/posts" target="_blank">GO TO  POSTS</a> <i class="bi bi-file-earmark-richtext fs-4"></i><br></li>
+            <li class="list-group-item list-group-item-dark link-info"> <a href="/files" target="_blank">OPEN LOCAL
+                    PDF</a> <i class="bi bi-folder2-open fs-4"></i><br> </li>
+            <li class="list-group-item list-group-item-warning"><a href="/files/download" target="_blank">DOWNLOAD
+                    PDF</a> <i class="bi bi-cloud-download-fill fs-4"></i><br></li>
+            <li class="list-group-item list-group-item-success"><a href="/users/55/posts/78" target="_blank">GO TO
+                    USERS</a> <i class="bi bi-people-fill fs-4"></i><br></li>
+            <li class="list-group-item list-group-item-danger"><a href="/posts" target="_blank">GO TO POSTS</a> <i
+                    class="bi bi-file-earmark-richtext fs-4"></i><br></li>
         </ul>
+    </div>
+    <div class="p-5 m-5 d-flex justify-content-center">
+        <button id="btn-on" type="button" class="btn btn-primary btn-lg text-nowrap me-5">Turn On</button>
+        <button id="btn-off" type="button" class="btn btn-danger btn-lg text-nowrap">Turn Off</button>
     </div>
 
     <script src="../js/bootstrap.js"></script>
+    <script src="../js/logic.js"></script>
 </body>
 
 </html>

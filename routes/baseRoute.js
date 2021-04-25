@@ -1,11 +1,13 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
+let cors = require('cors');
 
-var mainLogger = function (req, res, next) {
-    console.log('Main Logger')
-    next()
+let mainLogger = function (req, res, next) {
+    console.log('Main Logger');
+    next();
 }
 
+router.use(cors());
 router.use(express.static('files'));
 router.use(mainLogger);
 
