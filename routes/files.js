@@ -8,11 +8,11 @@ var filesMiddleware = function (req, res, next) {
 }
 
 baseRoute.get('/files', filesMiddleware, function (req, res) {
-    res.redirect('/tutorial.pdf');
+    res.redirect('/tutorial.PDF');
 });
 
 baseRoute.get('/files/download', filesMiddleware, function (req, res, next) {
-    res.download(appDir+'\\files\\tutorial.pdf', 'downloaded.pdf', function (err) {
+    res.download(appDir+'/files/tutorial.PDF', 'downloaded.pdf', function (err) {
         if (err) {
           console.error(err.message);          
           next(err);
