@@ -8,7 +8,7 @@ var filesMiddleware = function (req, res, next) {
 }
 
 baseRoute.get('/files', filesMiddleware, function (req, res) {
-    res.redirect('/tutorial.PDF');
+    res.redirect('/tutorial.PDF');//
 });
 
 baseRoute.get('/files/download', filesMiddleware, function (req, res, next) {
